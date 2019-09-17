@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Demo Chat Real Time Socket IO</title>
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="handle.js"></script>
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="loginForm">
+            <h3>WHAT'S YOUR NAME</h3>
+            <input type="text" id="txtUsername" />
+            <input type="button" id="btnRegister" value="Register"/>
+            
+        </div>
+        <div id="chatForm">
+            <div id="left">
+                <div id="boxTitle">Users Online</div>
+                <div id="boxContent">
+                </div>
+            </div>
+            <div id="right">
+                <div id="sayHi">
+                    Hello <span id="currentUser">Teo</span>
+                    <input type="button" id="btnLogout" value="Logout"/>
+                </div>
+                <div id="listMessages">
+
+                </div>
+                <div id="chatStatus"></div>
+                <input type="text" id="txtMessage"/>
+                <input type="button" id="btnSend" value="Send"/>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
